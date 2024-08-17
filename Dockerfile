@@ -28,7 +28,7 @@ RUN cp -rvf 2137_barista_cafe/* . && \
 RUN rm 2137_barista_cafe.zip
 
 # Expose port 80
-EXPOSE 80 22
+EXPOSE 80 22 90
 
 # Command to run the Apache server in the foreground
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
